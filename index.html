@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML harjutused</title>
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="html_favicon/favicon.ico">
     <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -13,8 +13,10 @@
     <style>
       .jumbo {
         background-image: url("https://picsum.photos/id/684/1400/1500?grayscale&blur=5");
-        height: 250px;
-        color: #fff;    
+        height: 200px;
+        color: #878d92;   
+        margin: 0px;
+        border-radius: 7px;
       }
 
       .bg-gradient {
@@ -25,11 +27,41 @@
         display: flex;
         margin: 0px;
         width: 212px;
+        background-color: #45474d;
+        transition: 500ms;
+      }
+
+      .card:hover {
+        background-color: #878d92;
+        transition: 300ms;
       }
 
       .card-body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         width: 100%;
         height: 212px;
+      }
+
+      .body {
+        height: 100%;
+        padding: 0px;
+        margin: 0px ;
+      }
+
+      .kummitus:hover {
+        color: #878d92;
+        transition: 300ms;
+      }
+
+      a {
+        text-decoration: none;
+        font-size: 1.25rem;
+      }
+
+      a:hover {
+        color: #878d92;
       }
 
     </style>
@@ -37,21 +69,21 @@
 <body class="bg-dark bg-gradient">
     <div class="container">
         <div class="p-5 mb-4 jumbo">
-            <div class="d-flex align-items-end justify-content-center" style="height:200px;">
-                <h2 class="display-1 text-center">HTML & Bootstrap harjutused</h2>
+            <div class="d-flex align-items-middle justify-content-center">
+                <h2 class="display-3 text-center">HTML & Bootstrap harjutused</h2>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 kummitus" style="text-align: left;">
                 <h3>HTML</h3>
-                <div class="card-group">
-                    <a href="h02.html" target="_blank">
+                <div class="card-group" style="text-align: center;">
+                    <a href="h02.html" target="_blank" class="kummitus">
                         <div class="card">
                             <div class="card-body">
                                 <p class="card-text">Harjutus 2</p>
                             </div>
                         </div>
-                    </a>
+                    </a>    
                     <a href="h03.html" target="_blank">
                         <div class="card">
                             <div class="card-body">
@@ -96,9 +128,9 @@
                     </a>
                 </div>   
             </div>
-            <div class="col-md-6">
-                <h3>Bootstrap</h3>
-                <div class="card-group">
+            <div class="col-md-6 kummitus" style="text-align: right;">
+                <h3 class="bs">Bootstrap</h3>
+                <div class="card-group" style="text-align: center;">
                     <a href="bs/bs01.html" target="_blank">
                         <div class="card">
                             <div class="card-body">
@@ -127,7 +159,7 @@
                             </div>
                         </div>
                     </a>
-                </div>   
+                </div>
             </div>
         </div>
     </div>
