@@ -1,28 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML harjutused</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io//favicon-32x32.png">
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+    <style>
+      .jumbo {
+        background-image: url("https://picsum.photos/id/684/1400/1500?grayscale&blur=5");
+        height: 250px;
+        color: #fff;    
+      }
+
+      .bg-gradient {
+        background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+      }
+
+      .card {
+        display: flex;
+        margin: 0px;
+        width: 212px;
+      }
+
+      .card-body {
+        width: 100%;
+        height: 212px;
+      }
+
+    </style>
 </head>
-<body>
-    <h1>HTML & Bootstrap harjutused</h1>
-    <h2>HTML</h2>
-    <ul>
-        <li><a href="h02.html">Harjutus 2</a><br></li>
-        <li><a href="h03.html">Harjutus 3</a><br></li>
-        <li><a href="h04.html">Harjutus 4</a><br></li>
-        <li><a href="h05/index.html">Harjutus 5</a><br></li>
-        <li><a href="h06.html">Harjutus 6</a><br></li>
-        <li><a href="h08.html">Harjutus 8</a><br></li>
-        <li><a href="h10.html">Harjutus 10</a></li>
-    </ul>
-    <h2>Bootstrap</h2>
-    <ul>
-        <li><a href="bs/bs01.html">Harjutus 1</a><br></li>
-        <li><a href="bs/bs02.html">Harjutus 2</a><br></li>
-        <li><a href="bs/bs03.html">Harjutus 3</a><br></li>
-        <li><a href="bs/bs04.html">Harjutus 4</a></li>
-    </ul>
+<body class="bg-dark bg-gradient">
+    <div class="container">
+        <div class="p-5 mb-4 jumbo">
+            <div class="d-flex align-items-end justify-content-center" style="height:200px;">
+                <h2 class="display-1 text-center">HTML & Bootstrap harjutused</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>HTML</h3>
+                <div class="card-group">
+                    <a href="h02.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 2</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h03.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 3</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h04.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 4</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h05/index.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 5</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h06.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 6</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h08.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 8</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="h10.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 10</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+            <div class="col-md-6">
+                <h3>Bootstrap</h3>
+                <div class="card-group">
+                    <a href="bs/bs01.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 1</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bs/bs02.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 2</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bs/bs03.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 3</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="bs/bs04.html" target="_blank">
+                        <div class="card">
+                            <div class="card-body">
+                                <p class="card-text">Harjutus 4</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>   
+            </div>
+        </div>
+    </div>
 </body>
 </html>
